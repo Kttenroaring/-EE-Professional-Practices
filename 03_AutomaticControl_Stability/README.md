@@ -31,8 +31,8 @@
 | 200K | 200K | 4V | 1.0 | 1.0076 |
 
 <div align="center">
-  <img src="image/proportional_100k.jpg" width="45%">
-  <img src="image/proportional_200k.jpg" width="45%">
+  <img src="images/proportional_100k.jpg" width="45%">
+  <img src="images/proportional_200k.jpg" width="45%">
 </div>
 <div align="center">
   <span>R1=100K 波形</span>
@@ -49,8 +49,8 @@
 | 200K | 200K | 1μ | 4V | 1 | 1 | 0.2 | 0.23 |
 
 <div align="center">
-  <img src="image/inertial_2u.jpg" width="45%">
-  <img src="image/inertial_1u.jpg" width="45%">
+  <img src="images/inertial_2u.jpg" width="45%">
+  <img src="images/inertial_1u.jpg" width="45%">
 </div>
 <div align="center">
   <span>C=2μ (T=0.44s)</span>
@@ -67,8 +67,8 @@
 | 500K | 2μ | 1V | 1.0 | 1.138 |
 
 <div align="center">
-  <img src="image/integral_1u.jpg" width="45%">
-  <img src="image/integral_2u.jpg" width="45%">
+  <img src="images/integral_1u.jpg" width="45%">
+  <img src="images/integral_2u.jpg" width="45%">
 </div>
 <div align="center">
   <span>C=1μ (Ti=0.612s)</span>
@@ -85,8 +85,8 @@
 | 500K | 500K | 2μ | 1V | 1 | 1 | 1.0 | 1.187 |
 
 <div align="center">
-  <img src="image/pi_1u.jpg" width="45%">
-  <img src="image/pi_2u.jpg" width="45%">
+  <img src="images/pi_1u.jpg" width="45%">
+  <img src="images/pi_2u.jpg" width="45%">
 </div>
 <div align="center">
   <span>C=1μ (T=0.563s)</span>
@@ -101,17 +101,17 @@
 
 | R=2K | R=4K | R=10K |
 |------|------|-------|
-| <img src="image/second_order_2k.jpg" width="100%"> | <img src="image/second_order_4k.jpg" width="100%"> | <img src="image/second_order_10k.jpg" width="100%"> |
+| <img src="images/second_order_2k.jpg" width="100%"> | <img src="images/second_order_4k.jpg" width="100%"> | <img src="images/second_order_10k.jpg" width="100%"> |
 
 | R=40K | R=70K |
 |-------|-------|
-| <img src="image/second_order_40k.jpg" width="100%"> | <img src="image/second_order_70k.jpg" width="100%"> |
+| <img src="images/second_order_40k.jpg" width="100%"> | <img src="images/second_order_70k.jpg" width="100%"> |
 
 ### 不同电容对响应的影响
 
 | C2=1μ | C2=2μ | C2=3μ |
 |-------|-------|-------|
-| <img src="image/second_order_c1.jpg" width="100%"> | <img src="image/second_order_c2.jpg" width="100%"> | <img src="image/second_order_c3.jpg" width="100%"> |
+| <img src="images/second_order_c1.jpg" width="100%"> | <img src="images/second_order_c2.jpg" width="100%"> | <img src="images/second_order_c3.jpg" width="100%"> |
 
 ---
 
@@ -129,8 +129,8 @@
 ### 不同参数下的响应波形
 
 <div align="center">
-  <img src="image/third_order_30k.jpg" width="45%">
-  <img src="image/third_order_41k.jpg" width="45%">
+  <img src="images/third_order_30k.jpg" width="45%">
+  <img src="images/third_order_41k.jpg" width="45%">
 </div>
 <div align="center">
   <span>R=30K</span>
@@ -138,7 +138,7 @@
 </div>
 
 <div align="center">
-  <img src="image/third_order_100k.jpg" width="45%">
+  <img src="images/third_order_100k.jpg" width="45%">
 </div>
 <div align="center">
   <span>R=100K</span>
@@ -146,11 +146,11 @@
 
 | T1=0.1, T2=0.5 | T1=0.1, T2=1.0 |
 |----------------|----------------|
-| <img src="image/third_order_01_05.jpg" width="100%"> | <img src="image/third_order_01_10.jpg" width="100%"> |
+| <img src="images/third_order_01_05.jpg" width="100%"> | <img src="images/third_order_01_10.jpg" width="100%"> |
 
 | T1=0.2, T2=0.5 | T1=0.2, T2=1.0 |
 |----------------|----------------|
-| <img src="image/third_order_02_05.jpg" width="100%"> | <img src="image/third_order_02_10.jpg" width="100%"> |
+| <img src="images/third_order_02_05.jpg" width="100%"> | <img src="images/third_order_02_10.jpg" width="100%"> |
 
 ### 思考题摘要
 **三阶系统的稳定性取决于什么？**
@@ -169,9 +169,9 @@
 | 0.3 | 3.2 Hz | 3.3 Hz |
 
 <div align="center">
-  <img src="image/freq_t01.jpg" width="30%">
-  <img src="image/freq_t02.jpg" width="30%">
-  <img src="image/freq_t03.jpg" width="30%">
+  <img src="images/freq_t01.jpg" width="30%">
+  <img src="images/freq_t02.jpg" width="30%">
+  <img src="images/freq_t03.jpg" width="30%">
 </div>
 <div align="center">
   <span>T=0.1</span>
@@ -191,8 +191,8 @@
 | 20 | 0.1 | 0.2 | 30.82 | 30 | 6.33 dB | 9.45 dB |
 
 <div align="center">
-  <img src="image/freq_k25_t01.jpg" width="45%">
-  <img src="image/freq_k25_t03.jpg" width="45%">
+  <img src="images/freq_k25_t01.jpg" width="45%">
+  <img src="images/freq_k25_t03.jpg" width="45%">
 </div>
 <div align="center">
   <span>K=25, T=0.1, Ti=1</span>
@@ -200,8 +200,8 @@
 </div>
 
 <div align="center">
-  <img src="image/freq_k20_t01_05.jpg" width="45%">
-  <img src="image/freq_k20_t01_02.jpg" width="45%">
+  <img src="images/freq_k20_t01_05.jpg" width="45%">
+  <img src="images/freq_k20_t01_02.jpg" width="45%">
 </div>
 <div align="center">
   <span>K=20, T=0.1, Ti=0.5</span>
@@ -224,7 +224,7 @@
 ### 4.4 MATLAB Bode图验证
 
 <div align="center">
-  <img src="image/matlab_bode.png" width="80%">
+  <img src="images/matlab_bode.png" width="80%">
 </div>
 <div align="center">
   *图：不同参数下的Bode图对比（MATLAB绘制）*
