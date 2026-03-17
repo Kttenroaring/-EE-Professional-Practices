@@ -83,13 +83,13 @@
 - **74194移位寄存器**：4位双向移位寄存器，实现流水效果
 - **分频器**：将高频时钟降频，适配人眼观察
 
-### 仿真波形
+### 仿真功能
 <div align="center">
   <img src="images/led_simulation1.png" width="45%">
   <img src="images/led_simulation2.png" width="45%">
 </div>
 <div align="center">
-  *彩灯循环仿真波形*
+
 </div>
 
 <div align="center">
@@ -97,7 +97,7 @@
   <img src="images/led_simulation4.png" width="45%">
 </div>
 <div align="center">
-  *不同循环模式的输出波形*
+
 </div>
 
 ### 移位寄存器扩展应用
