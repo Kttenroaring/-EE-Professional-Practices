@@ -44,7 +44,7 @@
 ## 🗂️ 仓库结构
 ```
 EE-professional-practices/
-├── README.md                    # 总目录（你现在看的这个）
+├── README.md                    
 ├── 01_PowerElectronics_Inverter/ # 电力电子项目
 │   ├── README.md
 │   ├── models/
@@ -61,7 +61,7 @@ EE-professional-practices/
 │   ├── README.md
 │   ├── multisim_files/
 │   └── screenshots/
-└── assets/                         # 公共资源（可选）
+└── assets/                         
     └── profile.jpg
 ```
 
