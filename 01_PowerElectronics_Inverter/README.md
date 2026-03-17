@@ -8,7 +8,6 @@
   - [2. IGBT三相电压型桥式逆变（SPWM）](#2-igbt三相电压型桥式逆变spwm)
 - [对比分析与结论](#-对比分析与结论)
 - [遇到的问题与解决](#-遇到的问题与解决)
-- [文件结构](#-文件结构)
 
 ---
 
@@ -101,21 +100,3 @@ Ld = U_ripple / (6 * omega * delta_Id);  % 计算结果≈0.05H
 
 **[返回目录](#-目录)**
 
-## 📁 文件结构
-```
-├── README.md
-├── models/
-│   ├── thyristor_inverter.slx    # 晶闸管有源逆变仿真模型
-│   └── igbt_inverter.slx         # IGBT-PWM逆变仿真模型
-├── images/
-│   ├── Id_waveform.png           # 直流侧电流波形
-│   ├── u_UV.png                  # 输出线电压波形
-│   ├── i_u.png                   # 输出电流波形
-│   ├── id.png                    # 直流侧电流波形
-│   └── fft_analysis.png          # FFT谐波分析图
-└── datasheets/
-    ├── thyristor_datasheet.pdf   # 晶闸管数据手册（可选）
-    └── IGBT_datasheet.pdf        # IGBT数据手册（可选）
-```
-
-**[返回目录](#-目录)**
