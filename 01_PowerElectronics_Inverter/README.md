@@ -32,24 +32,41 @@
   - 额定电流：5A（ITAV）/ 8A（ITRMS）
 
 #### 1.2 仿真结果
-| 项目 | 波形/数据 | 说明 |
-|------|----------|------|
-| 直流侧电流Id | ![Id波形](images/Id_waveform.png) | 纹波<20%，满足设计要求 |
-| 输入电流THDi | 25.38% | 谐波含量较高，需加滤波器 |
-| 功率因数PF | 0.0381 | 极低，反映相控逆变的固有缺陷 |
+
+**直流侧电流Id波形**
+| 波形1 | 波形2 |
+|-------|-------|
+| ![Id波形1](images/Id_waveform1.png) | ![Id波形2](images/Id_waveform2.png) |
+
+*电流纹波<20%，满足设计要求*
+
+**其他指标**
+- 输入电流THDi：25.38%（谐波含量较高，需加滤波器）
+- 功率因数PF：0.0381（极低，反映相控逆变的固有缺陷）
 
 #### 1.3 关键代码/模型
-```matlab
-% 平波电感计算示例
-% 根据公式：Ld ≈ Uripple(6f) / (6·ω·ΔId)
+### 平波电感计算公式
 
-U_ripple = 30;        % 6f纹波峰值(V)，从仿真波形读取
-delta_Id = 0.2 * 6;   % 20%纹波要求，Id=6A
-f = 50;               % 电网频率(Hz)
-omega = 2*pi*f;       % 角频率
+根据三相全控桥的纹波要求，平波电感 \( L_d \) 由下式确定：
 
-Ld = U_ripple / (6 * omega * delta_Id);  % 计算结果≈0.05H
-```
+\[
+L_d \approx \frac{U_{ripple(6f)}}{6 \cdot \omega \cdot \Delta I_d}
+\]
+
+其中：
+- \( U_{ripple(6f)} \)：直流电压中6倍频纹波分量的峰值（V）
+- \( \omega = 2\pi f \)：电网角频率（rad/s）
+- \( \Delta I_d = 20\% \cdot I_d \)：允许的电流纹波幅度（A）
+
+**参数取值：**
+- 纹波电压：\( U_{ripple(6f)} = 30 \, \text{V} \)（从仿真波形读取）
+- 直流电流：\( I_d = 6 \, \text{A} \)，\( \Delta I_d = 0.2 \times 6 = 1.2 \, \text{A} \)
+- 电网频率：\( f = 50 \, \text{Hz} \)，\( \omega = 2\pi \times 50 \approx 314.16 \, \text{rad/s} \)
+
+**计算结果：**
+\[
+L_d \approx \frac{30}{6 \times 314.16 \times 1.2} \approx 0.05 \, \text{H}
+\]
 
 **[返回目录](#-目录)**
 
@@ -65,7 +82,7 @@ Ld = U_ripple / (6 * omega * delta_Id);  % 计算结果≈0.05H
 | 项目 | 波形 | 特征 |
 |------|------|------|
 | 输出线电压 u_UV | ![u_UV波形](images/u_UV.png) | SPWM典型波形，无三次谐波 |
-| 输出电流 i_u | ![i_u波形](images/i_u.png) | 接近正弦波，电感平滑作用 |
+| 输出电流 i_u | ![i_u波形1](images/i_u1.png) ![i_u波形2](images/i_u2.png) | 接近正弦波，电感平滑作用 |
 | 直流侧电流 id | ![id波形](images/id.png) | 脉冲性，电容吸收脉动分量 |
 
 #### 2.3 谐波分析
