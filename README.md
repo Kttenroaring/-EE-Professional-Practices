@@ -41,29 +41,6 @@
 
 ---
 
-## 🗂️ 仓库结构
-```
-EE-professional-practices/
-├── README.md                    
-├── 01_PowerElectronics_Inverter/ # 电力电子项目
-│   ├── README.md
-│   ├── models/
-│   └── images/
-├── 02_ElectricMachinery_Transformer/ # 电机学项目
-│   ├── README.md
-│   ├── photos/
-│   └── video_link.md
-├── 03_AutomaticControl_Stability/ # 自动控制项目
-│   ├── README.md
-│   ├── data/
-│   └── images/
-├── 04_DigitalElectronics_FPGA/    # 数电项目
-│   ├── README.md
-│   ├── multisim_files/
-│   └── screenshots/
-└── assets/                         
-    └── profile.jpg
-```
 
 ## 📬 关于我
 - **专业**：电气工程及其自动化
