@@ -46,21 +46,13 @@
 - **分频器**：降低时钟频率，适配数码管显示
 - **74LS47译码器**：将BCD码转换为七段数码管驱动信号
 
-### 仿真原理图
+### 仿真原理图和结果
 <div align="center">
   <img src="images/fpga_schematic1.png" width="45%">
   <img src="images/fpga_schematic2.png" width="45%">
 </div>
 <div align="center">
   *完整系统原理图（分频+计数+译码+显示）*
-</div>
-
-### 仿真结果
-<div align="center">
-  <img src="images/fpga_simulation.jpg" width="80%">
-</div>
-<div align="center">
-  *计数器仿真波形图*
 </div>
 
 ### 大容量计数器设计方法
